@@ -12,7 +12,7 @@ def index():
 def process():
     print(request.form)
     
-    session['name'] = (request.form['name'])
+    session['name'] = request.form['name']
     session['location'] = request.form['location']
     session['language'] = request.form['language']
     session['comment'] = request.form['comment']
